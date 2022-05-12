@@ -14,46 +14,5 @@
   <tr>
     <td><code>*️⃣ SVG</code> <code>*️⃣ PNG</code> <code>*️⃣ JPEG</code> <code>#️⃣ JSON</code></td>
   </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://github.com/lowlighter/metrics/blob/examples/metrics.repository.svg" alt=""></img>
-      <img width="900" height="1" alt="">
-    </td>
-  </tr>
 </table>
 <!--/header-->
-
-## 🎎 Using a repository template
-
-To use a repository template, a `repo` handle must be provided.
-
-If the token owner is not the repository owner, then the `user` option must be set to the repository owner (whether it is an user or organization account).
-
-*Example: render `lowlighter/metrics` repository*
-```yml
-- uses: lowlighter/metrics@latest
-  with:
-    template: repository
-    user: lowlighter
-    repo: metrics
-```
-
-## ℹ️ Examples workflows
-
-<!--examples-->
-```yaml
-name: Example
-uses: lowlighter/metrics@latest
-with:
-  template: repository
-  filename: metrics.repository.svg
-  token: ${{ secrets.METRICS_TOKEN_WITH_SCOPES }}
-  user: lowlighter
-  repo: metrics
-  plugin_lines: yes
-  plugin_followup: yes
-  plugin_projects: yes
-  plugin_projects_repositories: lowlighter/metrics/projects/1
-
-```
-<!--/examples-->
